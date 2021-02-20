@@ -3,6 +3,15 @@
         max-width: 850px;
         margin: 0 auto;
     }
+    .catalog {
+        &__content {
+            display: none;
+            justify-content:space-around;
+            &_active  {
+                display: flex;
+            }
+        }
+    }
 }
 @media (max-width: 991px){
     .container {
@@ -31,6 +40,26 @@
             max-width: 100%;
         }
     }
+
+    .catalog {
+        &__content {
+            display: none;
+            justify-content:space-around;
+            &_active  {
+                display: flex;
+            }
+        }
+    }
+    .feed {
+        &__img {
+            width: 120px;
+            height: 120px;
+        }
+        &__text {
+            margin-left: 40px;
+            padding-right: 40px;
+            }
+        }
     
 }
 
@@ -120,6 +149,36 @@
             max-width: 100%;
         }
     }
+    .catalog {
+        &__tabs {
+            margin-top: 40px;
+        }
+        &__tab {
+            width: 130px;
+            height: 40px;
+            font-size: 13px;
+            line-height: 38px;
+        }
+    }
+    .feed {
+        hr {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        &__item {
+            &:nth-child(2) {
+            margin-top: 40px;
+            }
+        }
+        &__img {
+            width: 100px;
+            height: 100px;
+        }
+        &__text {
+            margin-left: 25px;
+            padding-right: 10px;
+            }
+        }            
 } 
 
 @media (max-width: 575px) {
@@ -185,7 +244,7 @@
         }
     }
     .title {
-        font-size: 26px;
+        font-size: 22px;
     }
     .consultation {
         position: relative;
@@ -216,6 +275,45 @@
         padding: 50px 0;
         &__inner {
             max-width: 100%;
+        }
+    }
+    .catalog {
+        padding-bottom: 50px;
+        &__tab {
+            width: 80px;
+            height: 50px;
+            font-size: 10px;
+            line-height: 11px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-item {
+            width: 280px;
+            padding: 20px 22px 26px 16px;
+        }
+    }
+    .feed {
+        &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+        &__img {
+            width: 70px;
+            height: 70px;
+        }
+        &__subtitle {
+            margin-top: 10px;
+            text-align: center;
+        }
+        &__count {
+            text-align: center;
+        }
+        &__descr {
+            margin-top: 10px;
+            text-align: center;
         }
     }
     
