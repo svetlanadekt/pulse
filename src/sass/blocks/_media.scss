@@ -146,6 +146,19 @@
         margin: -60px 0 0 -150px;
         z-index: 10;
         width: 300px;
+        &_mt25 {
+            width: 260px; 
+            text-align: center;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -100px 0 0 -130px;
+            z-index: 10;
+         }
     }   
     .carousel {
         padding: 50px 0;
@@ -199,7 +212,17 @@
                 font-size: 18px;
                 line-height: 18px;
             }
-        }          
+        } 
+        .modal{
+            width: 300px;
+            padding: 18px 20px 20px 20px;
+            &__subtitle {
+                font-size: 16px;
+            }
+            &__descr {
+                font-size: 12px;
+            }
+        } 
 } 
 
 @media (max-width: 575px) {
@@ -289,7 +312,19 @@
         width: 200px;
         input {
             height: 45px;
-        
+        }
+        &_mt25 {
+            width: 210px; 
+            text-align: center;
+            margin-top: 28px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -100px 0 0 -105px;
+            z-index: 10;
         }
     } 
     .carousel {
@@ -340,6 +375,20 @@
     .footer {
         &__info {
             width: 100%;
+        }
+    }
+    .modal {
+        min-height: 370px;
+        width: 240px;
+        padding: 18px 10px 10px 10px;
+        &__close {
+            right: -30px;
+        }
+        &__subtitle {
+            font-size: 14px;
+        }
+        &__descr {
+            font-size: 10px;
         }
     }
     
