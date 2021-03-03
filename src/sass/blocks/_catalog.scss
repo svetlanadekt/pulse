@@ -13,16 +13,16 @@
         width: 220px;
         height: 50px;
         border: 2px solid #d0d0d0;
-        font-size: 18px;
-        line-height: 48px;
-        font-weight: 500;
-        text-transform: uppercase;
         color: #6b6b6b;
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
         text-align: center;
+        line-height: 48px;
+        transform: skewX(-25deg);
+        margin: 0 5px;
         cursor: pointer;
         transition: 0.5s all;
-        margin: 0 5px;
-        transform: skewX(-25deg);
         &:hover {
             box-shadow: 3px 3px 20px $main-color;
             border: none;
@@ -41,7 +41,7 @@
         display: none;
         justify-content: space-between;
         flex-wrap: wrap;
-        &_active  {
+        &_active {
             display: flex;
         }
     }
@@ -60,37 +60,36 @@
         }
         &__subtitle {
             margin-top: 20px;
+            color: #0d0d0d;
             font-size: 16px;
             font-weight: 700;
-            color: #0d0d0d;
             text-align: center;
         }
         &__descr {
             margin-top: 16px;
-            font-size: 14px;
-            line-height: 1.2;
-            font-weight: 300;
             color: #0d0d0d;
+            font-size: 14px;
+            font-weight: 300;
             text-align: center;
         }
         &__link {
             display: block;
             margin-top: 17px;
+            color: $main-color;
             font-size: 14px;
             font-weight: 500;
             text-decoration: underline;
-            color: $main-color;
             text-align: center;
-            cursor: pointer;
             text-transform: uppercase;
             &:hover {
                 color: $main-color;
             }
         }
         hr {
+            background-color: #e8e8e8;
             margin-top: 19px;
             margin-bottom: 21px;
-            background-color: #e8e8e8;
+            border-bottom: none;
         }
         &__footer {
             display: flex;
@@ -98,15 +97,15 @@
             align-items: center;
         }
         &__old-price {
+            color: #555555;
             font-size: 14px;
             font-weight: 300;
-            color: #555555;
             text-decoration: line-through;
         }
         &__price {
+            color: #050505;
             font-size: 20px;
             font-weight: 700;
-            color: #050505;
         }
         &__wrapper {
             display: flex;
@@ -121,7 +120,6 @@
                 transform: translateX(0%);
                 margin-right: 20px;
             }
-
         }
         &__list {
             position: relative;
@@ -137,13 +135,15 @@
                 transform: translateX(-100%);
                 margin-left: 0px;
             }
+            ul {
+                list-style-type: none;
+            }
             li {
                 position: relative;
+                color: #555555;
                 font-size: 14px;
                 font-weight: 300;
-                color: #555555;
                 margin-bottom: 20px;
-                line-height: 1.2;
                 &:before {
                     content: '';
                     position: absolute;
@@ -166,9 +166,8 @@
             font-weight: 500;
             text-decoration: underline;
             text-transform: uppercase;
-            cursor: pointer;
             &:hover {
-                color:$main-color;
+                color: $main-color;
             }
         }
     }
